@@ -2,7 +2,7 @@ import React from 'react';
 import {SafeAreaView, TouchableOpacity, View, Image, Text, TextInput, FlatList} from 'react-native';
 import style from '../styles/homeStyle'
 
-const homeScreen = () => {
+const homeScreen = ({navigation}) => {
     const DATA = [
         {
           id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
@@ -126,6 +126,9 @@ const homeScreen = () => {
   shadowRadius: 10,
   elevation: 3,
   backgroundColor: 'white'
+                    }}
+                    onPress={()=>{
+                      navigation.navigate('productDetails')
                     }}
                 >
                     <TouchableOpacity

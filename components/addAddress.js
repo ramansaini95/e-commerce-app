@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import React from 'react';
 import {color} from '../assets/color'
+import TopBarNav  from './topBarNav'
 const addAddress = () => {
   const DATA = [
     {
@@ -46,33 +47,7 @@ const addAddress = () => {
         flex: 1,
         backgroundColor: '#fff',
       }}>
-      <View
-        style={{
-          height: 44,
-          width: '100%',
-          padding: 10,
-          flexDirection: 'row',
-          alignItems: 'center',
-          // justifyContent:'space-evenly'
-        }}>
-        <View
-          style={{
-            height: 40,
-            width: 40,
-            borderRadius: 20,
-            backgroundColor: color.appColor,
-          }}></View>
-        <Text
-          style={{
-            fontSize: 20,
-            color: 'black',
-            alignSelf: 'center',
-            marginLeft: 20,
-            fontWeight: '800',
-          }}>
-          Shipping Address
-        </Text>
-      </View>
+    <TopBarNav/>
      
       <View
         style={{
